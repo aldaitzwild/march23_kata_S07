@@ -7,3 +7,7 @@
  * 3/   afficher le resultat
  * 
  */
+
+ $message = file_get_contents('message.txt');
+ $message = str_replace('[PRENOM]', 'Thomas', $message);
+ echo $message;
